@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catatanku</title>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("catatanku.theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/">Catatanku</a>
+  <input id="q" class="search" type="search" placeholder="Cari catatan atau tag" aria-label="Cari catatan">
+  <button class="out" id="theme" type="button">Tema</button>
+  <a class="btn" href="#/new">Topik baru</a>
+</header>
+<main id="app"></main>
+<div id="toast" role="status"></div>
+<script src="editor.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
